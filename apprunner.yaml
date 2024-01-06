@@ -2,9 +2,7 @@ version: 1.0
 runtime: nodejs18
 build:
   commands:
-    - npm install --legacy-peer-deps
-    # - rm package-lock.json  # Uncomment if needed
-    - npm run build
+    - npm install --legacy-peer-deps && npm run build
 run:
   command: npm start
   port: 3000
