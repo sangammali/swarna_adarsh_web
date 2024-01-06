@@ -1,8 +1,12 @@
 version: 1.0
 runtime: nodejs18
+
 build:
   commands:
-    - npm install --legacy-peer-deps && npm run build
+    - npm install --legacy-peer-deps
+
 run:
-  command: npm start
-  port: 3000
+  command: npm run start
+  network:
+    port: 3000
+
