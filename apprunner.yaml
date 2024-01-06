@@ -3,10 +3,9 @@ runtime: nodejs18
 
 build:
   commands:
-    - npm install --legacy-peer-deps
+    - 'npm install --legacy-peer-deps'
 
 run:
   command: npm run start
   network:
     port: 3000
-
