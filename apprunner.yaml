@@ -3,7 +3,7 @@ runtime: nodejs18
 
 build:
   commands:
-    - 'npm install --legacy-peer-deps'
+    - npm install
 
 run:
   command: npm run start
