@@ -1,0 +1,10 @@
+version: 1.0
+runtime: nodejs
+build:
+  commands:
+    - node -v
+    - npm install --legacy-peer-deps
+    - rm -f package-lock.json
+    - npm start
+    - npm run build
+startCommand: npm start
